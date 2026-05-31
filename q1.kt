@@ -1,6 +1,5 @@
 class BankAccount {
     private var balance: Double = 0.0
-
     fun deposit(amount: Double) {
         if (amount > 0) {
             balance += amount
@@ -9,12 +8,10 @@ class BankAccount {
             println("Invalid amount")
         }
     }
-
     fun getBalance(): Double {
         return balance
     }
 }
-
 fun main() {
     val acc = BankAccount()
     acc.deposit(1000.0)
